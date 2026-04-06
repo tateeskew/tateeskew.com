@@ -31,6 +31,9 @@
   <!-- GLightbox -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
 
+  <!-- Pagefind Search -->
+  <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
+
   <!-- Theme toggle (inline to prevent flash) -->
   <script>
     (function() {
@@ -45,6 +48,20 @@
 <body>
   {{ partial "header.html" . }}
   <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- Search Modal -->
+  <div class="search-modal" id="search-modal" aria-hidden="true">
+    <div class="search-modal-overlay" id="search-modal-overlay"></div>
+    <div class="search-modal-content">
+      <div class="search-modal-header">
+        <span class="search-modal-title">Search</span>
+        <button class="search-modal-close" id="search-modal-close" aria-label="Close search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div id="search-container"></div>
+    </div>
+  </div>
 
   <main>
     {{ block "main" . }}{{ end }}
@@ -134,6 +151,59 @@
           });
         }
       }
+    });
+  </script>
+
+  <!-- Pagefind Search -->
+  <script src="/pagefind/pagefind-ui.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize Pagefind
+      if (typeof PagefindUI !== 'undefined') {
+        new PagefindUI({
+          element: '#search-container',
+          showSubResults: true,
+          showImages: false
+        });
+      }
+
+      // Search modal toggle
+      var searchModal = document.getElementById('search-modal');
+      var searchToggle = document.getElementById('search-toggle');
+      var searchClose = document.getElementById('search-modal-close');
+      var searchOverlay = document.getElementById('search-modal-overlay');
+
+      function openSearch() {
+        searchModal.classList.add('is-open');
+        searchModal.setAttribute('aria-hidden', 'false');
+        // Focus the search input
+        setTimeout(function() {
+          var input = searchModal.querySelector('.pagefind-ui__search-input');
+          if (input) input.focus();
+        }, 100);
+      }
+
+      function closeSearch() {
+        searchModal.classList.remove('is-open');
+        searchModal.setAttribute('aria-hidden', 'true');
+      }
+
+      if (searchToggle) searchToggle.addEventListener('click', openSearch);
+      if (searchClose) searchClose.addEventListener('click', closeSearch);
+      if (searchOverlay) searchOverlay.addEventListener('click', closeSearch);
+
+      // Keyboard shortcuts
+      document.addEventListener('keydown', function(e) {
+        // Cmd/Ctrl+K to open
+        if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+          e.preventDefault();
+          openSearch();
+        }
+        // Escape to close
+        if (e.key === 'Escape' && searchModal.classList.contains('is-open')) {
+          closeSearch();
+        }
+      });
     });
   </script>
 </body>

@@ -1242,6 +1242,202 @@ main {
   --pagefind-ui-font: var(--font-body);
 }
 
+/* Search toggle button in header */
+.search-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: var(--space-xs);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  width: 32px;
+  height: 32px;
+}
+
+.search-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.search-toggle svg {
+  flex-shrink: 0;
+}
+
+/* Search modal overlay */
+.search-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 12vh;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-med), visibility var(--transition-med);
+}
+
+.search-modal.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.search-modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+[data-theme="light"] .search-modal-overlay {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* Modal content panel */
+.search-modal-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 640px;
+  max-height: 70vh;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.03);
+  transform: translateY(-12px);
+  transition: transform var(--transition-med);
+}
+
+.search-modal.is-open .search-modal-content {
+  transform: translateY(0);
+}
+
+.search-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 1px solid var(--border);
+}
+
+.search-modal-title {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.search-modal-close {
+  background: none;
+  border: none;
+  color: var(--text-faint);
+  cursor: pointer;
+  padding: var(--space-xs);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-fast);
+}
+
+.search-modal-close:hover {
+  color: var(--text-primary);
+}
+
+/* Pagefind UI overrides within modal */
+#search-container {
+  padding: var(--space-md);
+  overflow-y: auto;
+  flex: 1;
+}
+
+#search-container .pagefind-ui__search-input {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+#search-container .pagefind-ui__search-input:focus {
+  border-color: var(--accent);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--accent-soft);
+}
+
+#search-container .pagefind-ui__search-clear {
+  color: var(--text-faint);
+}
+
+#search-container .pagefind-ui__result-link {
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-weight: 600;
+  border-bottom: none;
+}
+
+#search-container .pagefind-ui__result-link:hover {
+  color: var(--accent-glow);
+}
+
+#search-container .pagefind-ui__result-excerpt {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+#search-container .pagefind-ui__result {
+  border-bottom: 1px solid var(--border);
+  padding: var(--space-md) 0;
+}
+
+#search-container .pagefind-ui__button {
+  background: var(--bg-elevated);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+#search-container .pagefind-ui__button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+#search-container .pagefind-ui__message {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-faint);
+}
+
+@media (max-width: 768px) {
+  .search-modal {
+    padding-top: var(--space-lg);
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+
+  .search-modal-content {
+    max-height: 80vh;
+  }
+}
+
 /* --- Animations --- */
 @keyframes fadeInUp {
   from {
