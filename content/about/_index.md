@@ -25,7 +25,7 @@ featured_image: "/images/tate_recording_redone.jpg"
 
 - Part of the collective that has put [Functional Equivalent Recordings](http://www.functionalequivalentrecordings.com) out into the world. Visit the site for more information and to purchase records.
 
-- Contributor (both testing and monetarily) to [Ardour](http://www.ardour.org). Ardour is a free (as in beer and speech) open source digital audio workstation (DAW) software application. Visit the site for more information and to contribute.
+- Contributor (both testing and monetarily) to [Ardour](https://ardour.org/). Ardour is a free (as in beer and speech) open source digital audio workstation (DAW) software application. Visit the site for more information and to contribute.
 
 - Contributor to [Arch Linux](https://www.archlinux.org) and various other open source projects. [Tate's GitHub](https://github.com/tateeskew)
 
