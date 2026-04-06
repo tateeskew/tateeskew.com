@@ -1,0 +1,78 @@
+{{ define "main" }}
+
+{{/* Determine featured image: use front matter or fall back to default background */}}
+{{ $featuredImage := "" }}
+{{ with .Params.featured_image }}
+  {{ $featuredImage = . }}
+{{ end }}
+
+{{ if $featuredImage }}
+<!-- Full-viewport post hero with featured image -->
+<section class="post-hero" style="background-image: url('{{ $featuredImage }}');">
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <h1 class="hero-title post-hero-title">{{ .Title }}</h1>
+    <div class="post-hero-meta">
+      <span class="post-hero-date">{{ .Date.Format "January 2, 2006" }}</span>
+      {{ with .Params.categories }}
+        <span class="post-hero-sep">|</span>
+        <span class="post-hero-category">Posted in
+          {{ range $i, $cat := . }}{{ if $i }}, {{ end }}<a href="{{ "categories/" | relURL }}{{ $cat | urlize }}/">{{ $cat }}</a>{{ end }}
+        </span>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<article class="container fade-in">
+{{ else }}
+<!-- Standard header (no featured image) -->
+<article class="container fade-in">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+      {{ with .Params.categories }}
+        <span class="separator">/</span>
+        {{ range . }}
+        <a href="{{ "categories/" | relURL }}{{ . | urlize }}/" class="category">{{ . }}</a>
+        {{ end }}
+      {{ end }}
+      {{ if .Params.reading_time }}
+        <span class="separator">/</span>
+        <span>{{ .ReadingTime }} min read</span>
+      {{ end }}
+    </div>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.description }}
+    <p class="subtitle" style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.6;">{{ . }}</p>
+    {{ end }}
+  </header>
+{{ end }}
+
+  <div class="post-content fade-in fade-in-delay-1">
+    {{ .Content }}
+  </div>
+
+  {{ with .GetTerms "tags" }}
+  <div class="post-tags">
+    {{ range . }}
+    <a href="{{ .Permalink }}" class="tag">{{ .LinkTitle }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <!-- Post navigation -->
+  <nav class="pagination" style="margin-top: var(--space-xl);">
+    {{ with .PrevInSection }}
+    <a href="{{ .Permalink }}">← {{ .Title | truncate 40 }}</a>
+    {{ else }}
+    <span></span>
+    {{ end }}
+    {{ with .NextInSection }}
+    <a href="{{ .Permalink }}">{{ .Title | truncate 40 }} →</a>
+    {{ else }}
+    <span></span>
+    {{ end }}
+  </nav>
+</article>
+{{ end }}

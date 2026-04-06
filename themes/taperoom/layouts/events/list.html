@@ -1,0 +1,71 @@
+{{ define "main" }}
+<div class="container fade-in">
+  <h1>{{ .Title }}</h1>
+
+  {{ with .Content }}
+  <div class="fade-in fade-in-delay-1" style="margin-bottom: var(--space-xl);">
+    {{ . }}
+  </div>
+  {{ end }}
+
+  <!-- Upcoming Events -->
+  {{ with hugo.Data.events.upcoming }}
+  <div class="section-divider">
+    <span>Upcoming</span>
+  </div>
+  <table class="events-table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Event</th>
+        <th>Venue</th>
+        <th>City</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range . }}
+      <tr>
+        <td class="event-date">{{ .date }}</td>
+        <td>
+          {{ if .link }}<a href="{{ .link }}" target="_blank" rel="noopener">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
+          {{ with .details }}<br><span class="event-details">{{ . }}</span>{{ end }}
+        </td>
+        <td>{{ .venue }}</td>
+        <td>{{ .city }}</td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+  {{ end }}
+
+  <!-- Past Events -->
+  {{ with hugo.Data.events.past }}
+  <div class="section-divider">
+    <span>Past Events</span>
+  </div>
+  <table class="events-table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Event</th>
+        <th>Venue</th>
+        <th>City</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range . }}
+      <tr>
+        <td class="event-date">{{ .date }}</td>
+        <td>
+          {{ .title }}
+          {{ with .details }}<br><span class="event-details">{{ . }}</span>{{ end }}
+        </td>
+        <td>{{ .venue }}</td>
+        <td>{{ .city }}</td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+  {{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,7 @@
+# The Tape Room — Custom Hugo Theme for tateeskew.com
+# All configuration is in the root hugo.toml
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = '0.146.0'

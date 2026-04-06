@@ -1,0 +1,37 @@
+# Events Data — Migrated from WordPress GigPress plugin
+# Add new events by copying the template below.
+#
+# - date: "2026-04-15"
+#   title: "Show Title"
+#   venue: "Venue Name"
+#   city: "City, State"
+#   details: "Optional details, other artists, etc."
+#   link: "https://tickets-or-info-link.com"
+#   past: false
+
+upcoming: []
+
+past:
+  - date: "2014-08-31"
+    title: "Live at Emma Bistro"
+    venue: "Emma Bistro"
+    city: "Nashville, TN"
+    details: "w/ Sir Richard Bishop and Tashi Dorji. 8:00pm, $10, All Ages."
+    link: "http://www.myemma.com/bistro"
+    past: true
+
+  - date: "2014-07-25"
+    title: "Live at Emma Bistro"
+    venue: "Emma Bistro"
+    city: "Nashville, TN"
+    details: "w/ Jeremy Bible, Derek Schartung, and Coupler. 9:00pm, $7, All Ages."
+    link: "http://www.myemma.com/bistro"
+    past: true
+
+  - date: "2014-05-17"
+    title: "Live at Betty's"
+    venue: "Betty's"
+    city: "Nashville, TN"
+    details: "w/ Black Static Line, Tim Carey, and Dave Cloud and the Gospel of Power. 9:00pm, Free, No Minors."
+    link: ""
+    past: true

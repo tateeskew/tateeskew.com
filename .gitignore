@@ -1,0 +1,28 @@
+# Hugo build output
+/public/
+/resources/_gen/
+
+# WordPress export data (large, not needed in repo)
+/_wp-export/
+
+# Unused/migrated content sections
+/content/zero-art-project/
+/content/weekly-song-experiment/
+/content/music-faq/
+/content/daniels-artwork/
+/content/press-kit/
+/content/video/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Hugo lock file
+.hugo_build.lock

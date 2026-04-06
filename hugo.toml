@@ -1,0 +1,66 @@
+baseURL = "https://tateeskew.com/"
+languageCode = "en-us"
+title = "Tate Eskew"
+theme = "taperoom"
+copyright = "Tate Eskew"
+enableRobotsTXT = true
+paginate = 10
+
+[params]
+  description = "Open Source Advocate, Musician, Audio Engineer, Woodsman, Trail Runner, Community Builder and Practitioner of Regenerative Ecology"
+  author = "Tate Eskew"
+  bandcamp = "https://music.tateeskew.com"
+  soundcloud = "https://soundcloud.com/tateeskew"
+  github = "https://github.com/tateeskew"
+  mastodon = "https://indieweb.social/@tateeskew"
+  strava = "https://www.strava.com/athletes/6793127"
+  instagram = "https://www.instagram.com/tateeskew"
+
+[menus]
+  [[menus.main]]
+    name = "Writing"
+    pageRef = "/weblog"
+    weight = 10
+  [[menus.main]]
+    name = "Audio"
+    pageRef = "/audio"
+    weight = 20
+  [[menus.main]]
+    name = "Studio"
+    pageRef = "/studio"
+    weight = 30
+  [[menus.main]]
+    name = "Events"
+    pageRef = "/events"
+    weight = 35
+  [[menus.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 40
+  [[menus.main]]
+    name = "Contact"
+    url = "/#contact"
+    weight = 50
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+
+[outputFormats.JSON]
+  mediaType = "application/json"
+  baseName = "index"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "monokai"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5

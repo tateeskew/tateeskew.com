@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="container fade-in">
+  <h1>{{ .Title }}</h1>
+
+  {{ with .Content }}
+  <div class="fade-in fade-in-delay-1" style="margin-bottom: var(--space-xl);">
+    {{ . }}
+  </div>
+  {{ end }}
+
+  {{ $pages := .Pages }}
+  {{ if $pages }}
+  <ul class="post-list">
+    {{ range $pages }}
+    <li class="post-item">
+      <a href="{{ .Permalink }}">
+        <div class="post-meta">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+          {{ with .Params.categories }}
+            <span class="separator">/</span>
+            <span class="category">{{ index . 0 }}</span>
+          {{ end }}
+        </div>
+        <h3 class="post-title">{{ .Title }}</h3>
+        {{ with .Summary }}
+        <p class="post-excerpt">{{ . | plainify | truncate 180 }}</p>
+        {{ end }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+
+  <!-- Pagination -->
+  {{ template "_internal/pagination.html" . }}
+</div>
+{{ end }}

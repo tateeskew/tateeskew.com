@@ -1,0 +1,60 @@
+{{ define "main" }}
+<div class="container fade-in">
+  <h1>{{ .Title }}</h1>
+
+  {{ with .Content }}
+  <div class="fade-in fade-in-delay-1" style="margin-bottom: var(--space-xl);">
+    {{ . }}
+  </div>
+  {{ end }}
+
+  {{ $pages := .Pages }}
+  {{ if $pages }}
+  <div class="blog-list">
+    {{ range $pages }}
+    <article class="blog-card">
+      {{/* Thumbnail side */}}
+      <div class="blog-card-thumbnail">
+        <a href="{{ .Permalink }}" title="{{ .Title }}">
+          {{ with .Params.featured_image }}
+          <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+          {{ else }}
+          <div class="blog-card-no-image">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          </div>
+          {{ end }}
+        </a>
+        <a href="{{ .Permalink }}" class="blog-card-date-badge">
+          <span class="day">{{ .Date.Format "02" }}</span>
+          <span class="month">{{ .Date.Format "Jan 2006" }}</span>
+        </a>
+      </div>
+
+      {{/* Content side */}}
+      <div class="blog-card-content">
+        <div class="blog-card-categories">
+          {{ with .Params.categories }}
+            {{ range $i, $cat := . }}{{ if $i }}, {{ end }}<a href="{{ "categories/" | relURL }}{{ $cat | urlize }}/">{{ $cat }}</a>{{ end }}
+          {{ end }}
+        </div>
+
+        <a href="{{ .Permalink }}" class="blog-card-link">
+          <h2 class="blog-card-title">{{ .Title }}</h2>
+          {{ with .Summary }}
+          <p class="blog-card-excerpt">{{ . | plainify | truncate 200 }}</p>
+          {{ end }}
+        </a>
+
+        <div class="blog-card-author">
+          {{ with $.Site.Params.author }}{{ . }}{{ end }}
+        </div>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <!-- Pagination -->
+  {{ template "_internal/pagination.html" . }}
+</div>
+{{ end }}

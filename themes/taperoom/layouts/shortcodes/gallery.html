@@ -1,0 +1,16 @@
+{{- $dir := .Get "dir" -}}
+{{- $caption := .Get "caption" -}}
+<div class="gallery">
+  {{ $images := readDir (printf "static%s" $dir) }}
+  {{ range $images }}
+    {{ if or (strings.HasSuffix .Name ".jpg") (strings.HasSuffix .Name ".jpeg") (strings.HasSuffix .Name ".png") (strings.HasSuffix .Name ".webp") (strings.HasSuffix .Name ".gif") }}
+    <a href="{{ $dir }}{{ .Name }}" class="gallery-item" data-gallery="{{ $caption | default "gallery" }}">
+      <img src="{{ $dir }}{{ .Name }}" alt="{{ .Name | replaceRE `\.[^.]+$` "" | replaceRE `[-_]` " " | title }}" loading="lazy">
+    </a>
+    {{ end }}
+  {{ end }}
+</div>
+{{ with $caption }}
+<p style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-faint); text-transform: uppercase; letter-spacing: 0.1em; margin-top: var(--space-sm); text-align: center;">{{ . }}</p>
+{{ end }}
+

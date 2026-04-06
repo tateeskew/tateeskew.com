@@ -1,0 +1,14 @@
+{{- $id := .Get "id" -}}
+{{- $title := .Get "title" | default "YouTube Video" -}}
+<div class="embed-container">
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 4px;">
+    <iframe
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+      src="https://www.youtube-nocookie.com/embed/{{ $id }}"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      loading="lazy"
+      title="{{ $title }}">
+    </iframe>
+  </div>
+</div>

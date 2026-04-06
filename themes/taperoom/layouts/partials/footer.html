@@ -1,0 +1,14 @@
+<footer class="site-footer">
+  <div class="container">
+    <span>&copy; {{ now.Year }} {{ .Site.Copyright }}. All rights reserved.</span>
+    <div class="footer-links">
+      {{ with .Site.Params.bandcamp }}<a href="{{ . }}" target="_blank" rel="noopener">Bandcamp</a>{{ end }}
+      {{ with .Site.Params.soundcloud }}<a href="{{ . }}" target="_blank" rel="noopener">SoundCloud</a>{{ end }}
+      {{ with .Site.Params.github }}<a href="{{ . }}" target="_blank" rel="noopener">GitHub</a>{{ end }}
+      {{ with .Site.Params.mastodon }}<a href="{{ . }}" target="_blank" rel="me noopener">Mastodon</a>{{ end }}
+      {{ with .Site.Params.strava }}<a href="{{ . }}" target="_blank" rel="noopener">Strava</a>{{ end }}
+      {{ with .Site.Params.instagram }}<a href="{{ . }}" target="_blank" rel="noopener">Instagram</a>{{ end }}
+      <a href="{{ "index.xml" | absURL }}">RSS</a>
+    </div>
+  </div>
+</footer>

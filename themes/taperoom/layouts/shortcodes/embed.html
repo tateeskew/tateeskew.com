@@ -1,0 +1,18 @@
+{{- $id := .Get "id" | default "" -}}
+{{- $width := .Get "width" | default "100%" -}}
+{{- $height := .Get "height" | default "300" -}}
+{{- $inner := .Inner -}}
+<div class="embed-container">
+  {{ with $inner }}
+    {{ . | safeHTML }}
+  {{ else }}
+  <iframe
+    {{ with $id }}id="{{ . }}"{{ end }}
+    style="border: 0; width: {{ $width }}; height: {{ $height }}px;"
+    src="{{ $.Get "src" }}"
+    loading="lazy"
+    allowfullscreen
+    title="{{ $.Get "title" | default "Embedded content" }}">
+  </iframe>
+  {{ end }}
+</div>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ if not .IsHome }}{{ .Title }} — {{ end }}{{ .Site.Title }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta name="author" content="{{ .Site.Params.author }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  {{ with .Params.featured_image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+
+  <!-- RSS -->
+  {{ range .AlternativeOutputFormats }}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end }}
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+
+  <!-- Styles -->
+  {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+  <!-- GLightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
+
+  <!-- Theme toggle (inline to prevent flash) -->
+  <script>
+    (function() {
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+      else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</head>
+<body>
+  {{ partial "header.html" . }}
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ partial "footer.html" . }}
+
+  <!-- GLightbox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/js/glightbox.min.js"></script>
+
+  <!-- Theme toggle script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Theme toggle
+      var toggle = document.getElementById('theme-toggle');
+      if (toggle) {
+        toggle.addEventListener('click', function() {
+          var html = document.documentElement;
+          var current = html.getAttribute('data-theme');
+          var next = current === 'dark' ? 'light' : 'dark';
+          html.setAttribute('data-theme', next);
+          localStorage.setItem('theme', next);
+          toggle.textContent = next === 'dark' ? 'Light' : 'Dark';
+        });
+        // Set initial text
+        var current = document.documentElement.getAttribute('data-theme');
+        toggle.textContent = current === 'dark' ? 'Light' : 'Dark';
+      }
+
+      // Mobile nav
+      var navToggle = document.getElementById('nav-toggle');
+      var nav = document.getElementById('site-nav');
+      var overlay = document.getElementById('nav-overlay');
+      if (navToggle && nav) {
+        navToggle.addEventListener('click', function() {
+          nav.classList.toggle('is-open');
+          overlay.classList.toggle('is-visible');
+        });
+        overlay.addEventListener('click', function() {
+          nav.classList.remove('is-open');
+          overlay.classList.remove('is-visible');
+        });
+      }
+
+      // Contact email obfuscation
+      var contactLink = document.getElementById('contact-link');
+      if (contactLink) {
+        var u = 'tate', d = 'tateeskew.com';
+        var e = u + '@' + d;
+        contactLink.href = 'mailto:' + e;
+        contactLink.textContent = e;
+      }
+
+      // GLightbox — initialize for gallery items and content images
+      if (typeof GLightbox !== 'undefined') {
+        // 1. Gallery items (galleries and image-grids with .gallery-item class)
+        var galleryItems = document.querySelectorAll('.gallery-item');
+        if (galleryItems.length > 0) {
+          GLightbox({
+            selector: '.gallery-item',
+            touchNavigation: true,
+            loop: true,
+            closeOnOutsideClick: true
+          });
+        }
+
+        // 2. Content images — links to image files that aren't already gallery items
+        var imgExts = /\.(jpg|jpeg|png|gif|webp|svg)(\?.*)?$/i;
+        var contentLinks = document.querySelectorAll('.post-content a, .page-content a, main a');
+        contentLinks.forEach(function(link) {
+          if (link.classList.contains('gallery-item')) return;
+          if (link.closest('.blog-card')) return;
+          if (link.closest('.post-list')) return;
+          var href = link.getAttribute('href');
+          if (href && imgExts.test(href)) {
+            link.classList.add('glightbox-content');
+            link.setAttribute('data-type', 'image');
+          }
+        });
+        var contentImgLinks = document.querySelectorAll('.glightbox-content');
+        if (contentImgLinks.length > 0) {
+          GLightbox({
+            selector: '.glightbox-content',
+            touchNavigation: true,
+            loop: true,
+            closeOnOutsideClick: true
+          });
+        }
+      }
+    });
+  </script>
+</body>
+</html>

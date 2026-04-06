@@ -1,0 +1,15 @@
+{{- /* Subvert.fm Embed — scaffolded, update when platform launches */ -}}
+{{- $id := .Get "id" -}}
+{{- $type := .Get "type" | default "album" -}}
+{{- $height := .Get "height" | default "300" -}}
+<div class="embed-container">
+  <div class="embed-label">subvert.fm</div>
+  <!-- Update the src URL when Subvert.fm embed format is finalized -->
+  <iframe
+    style="border: 0; width: 100%; max-width: 600px; height: {{ $height }}px;"
+    src="https://subvert.fm/embed/{{ $type }}/{{ $id }}"
+    allow="autoplay; encrypted-media"
+    loading="lazy"
+    title="Subvert.fm Player">
+  </iframe>
+</div>

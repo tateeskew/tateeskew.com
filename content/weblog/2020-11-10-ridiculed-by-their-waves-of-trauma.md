@@ -1,0 +1,64 @@
+---
+title: Ridiculed By Their Waves of Trauma
+date: 2020-11-10T21:51:10+00:00
+aliases:
+  - /2020/11/10/ridiculed-by-their-waves-of-trauma/
+featured_image: /images/trail2autumn.jpg
+categories:
+  - cycling
+  - running
+  - trailrunning
+
+---
+Over the last few months, I was given the okay to start running again. I had missed it terribly. Running long distances has always been something I've not only had a penchant for but has also been a meditation practice for me. People often ask me what I think about for hours at a time when I'm running these long distances. Honestly, I try not to think at all. I just try to breeze through trails as you see in the photos below.
+
+![](/images/trail2autumn.jpg)With that said, this morning I was indeed thinking while sitting at my desk about something that I have noticed even more after being forced to take a break from running and cycling. Something I have not missed during my break when not running or riding on trails is the ridiculous nature and response of people in vehicles and bystanders along public roadways. On at least three occasions over as many months since I've started back running and riding, I've experienced things thrown at me and being yelled at as I propelled myself forward on my legs or two wheels.Â  This is obviously a big reason why I spend most of my running hours on trails. I was thinking about writing an essay here about this very thing and relating it to psychology or sociology, but I figured someone had already written something along those lines. So, I went on a search and it didn't take long to come across this particular essay from [Paul Theroux][1]. I thought I would share it here. This specific essay comes from his collection of writings entitled [_Fresh Air Fiend_][2]
+
+<div id="attachment_1869" style="width: 1034px" class="wp-caption aligncenter">
+![](/images/trailautumn.jpg)
+
+
+Trail at our farm in Tennessee
+
+One of my favorite quotes from the essay:
+
+> Yet the response is so lacking in tolerance that I cannot help but think that at its source is a wild anger, a fear and frustration, at being faced by a free spirit, someone who cannot be controlled. — Theroux
+
+<h3 style="text-align: center;">
+The Moving Target
+</h3>
+
+A COURAGEOUS but obscure traveler named Nathaniel Bishop, from my hometown of Medford, Massachusetts, rowed a small boat called a sneakbox twenty-six hundred miles, from upper New York State to New Orleans, around 1877. When he arrived at New Orleans, exhausted, and tied his boat to a jetty, a group of young drunks congregated near his boat and mocked him, threatened him, and swore at him. This, I have come to think, is a very American reaction, rewarding eccentric effort with scorn and violence.
+
+In the 1920s, the long-distance horseman A. F. Tschiffely saddled up in Buenos Aires and rode ten thousand miles northward, heading for New York City. He crossed deserts, mountain ranges, jungles, swamps; he labored over the Andes, toiled through Central America, trotted across Mexico. But the worst was to come. His most dispiriting days on this two-and-a-half-year journey were those he spent traversing various American states. "I had a great deal of trouble with 'road hogs,'" he wrote in Southern Cross to Pole Star, and he told how American motorists would deliberately swerve in order to scare him.
+
+"Off and on different objects were thrown at us, and once even an empty bottle, whilst shouting, 'Ride 'em cowboy!'" On a back road in the Blue Ridge Mountains, a man calculatedly sideswiped him, injuring his horse's leg (the driver then honked and waved in triumph). After two more serious incidents of this kind, Tschiffely abandoned his epic trip in Washington, D.C., and took the train to New York.
+
+At this point, the reader who is a jogger or similar sort of outdoor exerciser will shudder with recognition. Practically every jogger I know has been heckled or threatened in this way. Anyone who runs by the roadside, it seems, is subjected to catcalls, honks, verbal abuse, unwelcome invitations, and guffaws. Objects are flung from carsâ€”coins, food, beer cans. People spit. It is remarkable how forcefully people can spit when there is someone either to impress or to intimidate. Women joggers occupy a special category of potential victim, and wherever they exercise, they can accurately be described as running a gauntlet.
+
+In London, such behavior is less common in my experienceâ€”bystanders are more used to eccentricity. They have to be, because people live at such close quarters. Henry James remarked on this one hundred years ago in English Hours: "We seem loosely hung together at home as compared with the English, every man of whom is a tight fit in his place." He goes on to say, "It is not an inferential but a palpable fact that England is a crowded country."
+
+Americans, who boast of living in a place with plenty of room for everyone, tend to object to any sort of proximity, and at the slightest hint of a loss of elbow room say, "You're in my space" or "Get out of my face." At the same time, the pressure of crowds and the uncertainties of class have made Britain a more tolerant and gentler place. Anglers can be awful to canoeists, but that is strictly territorial in a country where fishing rights are sold by the yard on rural rivers. Few people are bothered by joggers, horse riders, or athletes in outlandish clothes. The British cyclist causes the least comment of allâ€”it might be anyone, a policeman, a schoolchild, a commuter, a racer, or your elderly father-in-law. The British jogger is allowed his or her share of the road.
+
+American joggers are frequently harassed by people in moving cars, and these antagonists are their single greatest risk, far greater than bone spurs, gut aches, hammered knee joints, or hot flashes. I have found no literature on the subject of anti-social behavior toward people who make themselves visible through solitary exercise. What might be perceived as harmless heckling seems to me to express an intention that is related to assault, obstruction, even rape and murder.
+
+I don't jogâ€”too tough on my muscles and bones, it makes me feel unwell. But I value solitary aerobic exercise of other kinds, such as pedaling a bike, paddling a kayak, and rowing a boat. I happened to be cycling when I realized that my presence aroused a sort of hysteria in bystanders or people passing in cars. They shouted abuse, they laughed. What's so funny? They threw things. It was actually worse in bad weather, as though there were something in the very nature of adverse conditions that made people gloatingly more abusive, because I was more vulnerable. Rain or cold days brought out brutishness in them. I endured it for a while, and then I asked around. I was not alone. Most cyclists have stories of this kind, and joggers had much worse ones, and women joggers told the worst persecution stories.
+
+Fleeing to the ocean doesn't help. Rowing my boat off Cape Cod, I am constantly harassed by speedboats. What is it about recreational motorboaters (as opposed to fishermen in motorboats) that makes them such a callow, aggressive breed? Something to do, perhaps, with the fact that boozing and boating often go together, and so many of the boaters are teenagers, not old enough to drive a car. A rowboat is no match for one of these foaming monsters that goes slapping past. I have lost count of the number of times such boats have almost swamped me. I can only believe that it is deliberate. Is it possible the boaters don't know they throw up a five-foot wall of water in their wake?
+
+The smaller and frailer-seeming the boat, the greater the threat. In my kayak I am frequently yelled at, barracked, hectored, and mocked. Kids on Jet Skis are unspeakable. They sideswipe, they strafe, and they leave you in no doubt that these machines ("personal watercraft") are just the latest in a long line of technological atrocities unleashed on a peaceable world by Japanese manufacturers.
+
+Anecdotal evidence overwhelmingly indicates that anyone who jogs or rows or cycles in the open, in this free country, is asking for some kind of trouble. As I've said, it ranges from an obscene gesture to an attempt at murder. This is worth examining as a social phenomenon, partly because we take for granted that it will happen, but also because it is a specifically American occurrence. I have cycled and rowed in other countries, and I have been stared at, but not harassed. The aggression in the American reaction often has a comic veneer, the bullying, joshing sort which characterizes a certain variety of our humor and which makes it indistinguishable from sadism. The origin of this kind of heckling might be summed up in the old-time shriek "Get a horse!" but it is much more serious than it seems, and I believe it constitutes an actual threat.
+
+In the most common situation, the threat comes from more than one personâ€”rarely is it one-on-one. The group of people in the car or speedboat, the phalanx of jet skiers, are nearly always male. Their response appears to be a reflex of violent envy directed against an isolated and vulnerable personâ€”the skimpily clothed jogger, the madly balancing paddler, the panting cyclist. It is like an objection to the assertive freedom and health implicit in these pastimes, and it might be bound up with the suspicionâ€”in a minority of cases a well-founded suspicionâ€”that someone who exercises this way so publicly is showing off.
+
+Yet the response is so lacking in tolerance that I cannot help but think that at its source is a wild anger, a fear and frustration, at being faced by a free spirit, someone who cannot be controlled. And the instance where the foolish person plows by in a speedboat and lets loose a loud and stupid remark might be explained by his sudden realization that for once in his life he is stronger and faster and apparently superior. Such a person would deny he is a criminal, and yet his reaction is the impulse behind most crime: the eagerness to commit an act of violence because the victim seems weak, ludicrous, exposed, and nakedâ€”victims nearly always seem that way. Crime is a monstrous sort of unfairness, and so it is always in the criminal's interest to pick on an especially weak or supine target.
+
+Why does this, as far as I know, mostly happen in America? What is it that rouses us and incites us against people pursuing innocent and healthful objectives? Perhaps that is part of the answer: the very innocence and robustness implicit in jogging or cycling might themselves be a kind of provocation. As for the shouting, well, Americans tend to think out loudâ€”you get perfect strangers yapping at each other all over. In our strenuously verbal and competitive culture, great stress is placed on self-assertion. The irony is that people jogging, paddling, or cycling are exhibiting in a non-aggressive way those same demonstrative characteristics. And as I mentioned, it is more than likely, too, that joggers and other fresh air fiends are motivated to a certain extent by impure enthusiasm. There are many who could be described as hotshots, seeming to invite comment. It is hard to see a person cantering on a horse without imagining that person thinking, I am on a horse and you're not.
+
+Even so, that is no reason for the person to be violently harassed. We are described as a nation that respects the rights of individuals, but I have seldom found this to be the rule. Eccentricityâ€”even the healthy eccentricity in these one-person pastimesâ€”is commonly perceived as a threat. I suspect that we are more deeply conservative and threatened by novelty than we imagine. Generally, we don't want to believe that we are, and we cling to a mythical notion of ourselves as tolerant and liberal-minded. I think our tolerance is mostly posturing. It is unpleasant to contemplate, but this swift impulse to harry the jogger or to swamp the small boater seems like a specifically American trait, one of our worst, arising from the pack mentality of our competitiveness, our vocal masculinity, our contempt for eccentricity, and our self-justifying humor in which the butt of the joke is always a weak victim.
+
+I wonder whether it is possible to widen this argument and make it political. So much in American foreign policy is related to implied threat or the wish to control. I think our irrational reaction to any number of countries that have chosen an unconventional path to political or economic fulfillment is an example of this envious bullying. We are always talking about freedom as though we valued it. If we truly valued it and practiced it, we would probably talk about it less often instead of treating it like a mantra in the hope of overcoming our baser instincts.
+
+[1]: https://en.wikipedia.org/wiki/Paul_Theroux
+[2]: https://www.goodreads.com/book/show/63705.Fresh_Air_Fiend
