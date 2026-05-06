@@ -1,0 +1,55 @@
+# Links Page Data — "Link in Bio" style page
+# Migrated from WordPress Linky plugin (wp_linky_page option)
+#
+# Edit this file to add, remove, or reorder links.
+# They will appear in the order listed below.
+#
+# Fields:
+#   title:    Display text for the link (required)
+#   url:      Full URL or relative path (required)
+#   icon:     Icon name: globe, record, article, headphones, mic, shop, mail, link (default: link)
+#   label:    Optional badge text (e.g. "New")
+#   active:   true/false — inactive links are hidden (default: true)
+
+links:
+  - title: "Tate's Website"
+    url: "https://www.tateeskew.com"
+    icon: "globe"
+    active: true
+
+  - title: "Functional Equivalent Recordings"
+    url: "https://www.functionalequivalentrecordings.com/"
+    icon: "record"
+    active: true
+
+  - title: "Top 35 Records of 2025"
+    url: "/weblog/2025-12-30-top-35-albums-of-2025/"
+    icon: "article"
+    label: "New"
+    active: true
+
+  - title: "I'm Gettin' Too Old To Do That!"
+    url: "/weblog/2025-12-03-im-gettin-too-old-to-do-that/"
+    icon: "article"
+    label: "New"
+    active: true
+
+  - title: "Top 35 Records of 2024"
+    url: "/weblog/2024-12-13-top-35-records-of-2024/"
+    icon: "article"
+    active: true
+
+  - title: "Top 35 Records of 2023"
+    url: "/weblog/2023-12-18-top-35-albums-of-2023/"
+    icon: "article"
+    active: false
+
+  - title: "The Arts, Technology, and Sport"
+    url: "/weblog/2023-01-01-the-arts-technology-and-sport/"
+    icon: "article"
+    active: false
+
+  - title: "Top 35 Records of 2022"
+    url: "/weblog/2022-12-19-top-35-albums-of-2022-1/"
+    icon: "article"
+    active: false
