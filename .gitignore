@@ -23,6 +23,7 @@ Thumbs.db
 *~
 .vscode/
 .idea/
+*.code-workspace
 
 # Hugo lock file
 .hugo_build.lock
