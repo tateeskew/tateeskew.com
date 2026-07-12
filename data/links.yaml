@@ -22,6 +22,11 @@ links:
     icon: "record"
     active: true
 
+  - title: "Buy Music and Stickers"
+    url: "https://tateeskew.bandcamp.com/merch"
+    icon: "shop"
+    active: true
+
   - title: "Top 35 Records of 2025"
     url: "/weblog/2025-12-30-top-35-albums-of-2025/"
     icon: "article"
