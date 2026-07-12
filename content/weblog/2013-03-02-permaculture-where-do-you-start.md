@@ -87,25 +87,25 @@ A lot of what I will post here will be targeted at people who don't necessarily 
 
 <ul id="linklist">
 <li>
-<a href="http://www.amazon.com/gp/product/1603580298/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1603580298&linkCode=as2&tag=theeskhom-20">Gaia's Garden, Second Edition: A Guide To Home-Scale Permaculture</a>![](http://www.assoc-amazon.com/e/ir?t=theeskhom-20&l=as2&o=1&a=1603580298)
+<a href="http://www.amazon.com/gp/product/1603580298/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1603580298&linkCode=as2&tag=theeskhom-20">Gaia's Garden, Second Edition: A Guide To Home-Scale Permaculture</a>
 </li>
 <li>
-<a href="http://www.amazon.com/gp/product/0646418440/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0646418440&linkCode=as2&tag=theeskhom-20">Permaculture: Principles and Pathways Beyond Sustainability</a>![](http://www.assoc-amazon.com/e/ir?t=theeskhom-20&l=as2&o=1&a=0646418440)
+<a href="http://www.amazon.com/gp/product/0646418440/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0646418440&linkCode=as2&tag=theeskhom-20">Permaculture: Principles and Pathways Beyond Sustainability</a>
 </li>
 <li>
-<a href="http://www.amazon.com/gp/product/1590173139/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1590173139&linkCode=as2&tag=theeskhom-20">The One-Straw Revolution: An Introduction to Natural Farming (New York Review Books Classics)</a>![](http://www.assoc-amazon.com/e/ir?t=theeskhom-20&l=as2&o=1&a=1590173139)
+<a href="http://www.amazon.com/gp/product/1590173139/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1590173139&linkCode=as2&tag=theeskhom-20">The One-Straw Revolution: An Introduction to Natural Farming (New York Review Books Classics)</a>
 </li>
 <li>
-<a href="http://www.amazon.com/gp/product/1604692707/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1604692707&linkCode=as2&tag=theeskhom-20">The Vegetable Gardener's Guide to Permaculture: Creating an Edible Ecosystem</a>![](http://www.assoc-amazon.com/e/ir?t=theeskhom-20&l=as2&o=1&a=1604692707)
+<a href="http://www.amazon.com/gp/product/1604692707/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1604692707&linkCode=as2&tag=theeskhom-20">The Vegetable Gardener's Guide to Permaculture: Creating an Edible Ecosystem</a>
 </li>
 <li>
-<a href="http://www.forestag.com/book.html">Restoration Agriculture: Perennial Permaculture for the Farm</a>
+<a href="https://www.amazon.com/dp/B08ZDGRCGS">Restoration Agriculture: Perennial Permaculture for the Farm</a>
 </li>
 <li>
-<a href="http://www.wholesystemsdesign.com/resilient-farm-homestead-book/">The Resilient Farm and Homestead: An Innovative Permaculture and Whole Systems Design Approach</a>
+<a href="https://www.wholesystemsdesign.com/the-resilient-farm-homestead-ben-falk">The Resilient Farm and Homestead: An Innovative Permaculture and Whole Systems Design Approach</a>
 </li>
 <li>
-<a href="http://www.amazon.com/gp/product/1603583998/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1603583998&linkCode=as2&tag=theeskhom-20">Paradise Lot: Two Plant Geeks, One-Tenth of an Acre, and the Making of an Edible Garden Oasis in the City</a>![](http://www.assoc-amazon.com/e/ir?t=theeskhom-20&l=as2&o=1&a=1603583998)
+<a href="http://www.amazon.com/gp/product/1603583998/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1603583998&linkCode=as2&tag=theeskhom-20">Paradise Lot: Two Plant Geeks, One-Tenth of an Acre, and the Making of an Edible Garden Oasis in the City</a>
 </li>
 </ul>
 
@@ -143,16 +143,16 @@ A lot of what I will post here will be targeted at people who don't necessarily 
 <li style="list-style-type: none;">
 <ul>
 <li>
-I must point out that one of the quickest ways to dive straight in is to take a permaculture design course (PDC). These are intensive training courses taught by people who themselves at some point took a PDC and have a lot of information and knowledge to share. If you are looking to take a course near middle Tennessee, my good friends Cliff Davis, Jennifer Albanese and Jessie Smith have courses setup quite frequently. You can visit Cliff and Jen's family business website here to register for a course: <a href="http://www.spiralridgepermaculture.com">Spiral Ridge Permaculture</a>Below you can find a list of other places that you can take a permaculture design course.
+I must point out that one of the quickest ways to dive straight in is to take a permaculture design course (PDC). These are intensive training courses taught by people who themselves at some point took a PDC and have a lot of information and knowledge to share. Below you can find a list of other places that you can take a permaculture design course.
 </li>
 <li>
-<a href="http://www.wholesystemsdesign.com/permaculture-design-course/">Whole Systems Design – Vermont</a>
+<a href="https://www.wholesystemsdesign.com/">Whole Systems Design – Vermont</a>
 </li>
 <li>
 <a href="http://siskiyoupermaculture.com/">Siskiyou Permaculture – Oregon</a>
 </li>
 <li>
-<a href="http://midwestpermaculture.com/about/our-certification-courses/">Midwest Permaculture – Illinois</a>
+<a href="http://midwestpermaculture.com/">Midwest Permaculture – Illinois</a>
 </li>
 <li>
 <a href="http://www.regenerativedesign.org/">Regenerative Design Institute – Northern California</a>
@@ -165,5 +165,5 @@ There are a number of other places offering permaculture design courses. If you 
 I genuinely hope that the information here moves you to action. I know that nearly everyone I introduce these concepts to becomes engulfed with them. I'm quite available for your questions and love to share information.  
 Do you have some resources that I should post here? [Contact me][2], let me know and I will add it.
 
-[1]: http://www.tateeskew.com/contact/ "Contact Tate"
-[2]: http://www.tateeskew.com/contact/ "Contact me"
+[1]: https://tateeskew.com/#contact "Contact Tate"
+[2]: https://tateeskew.com/#contact"Contact me"
