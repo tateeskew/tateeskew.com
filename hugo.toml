@@ -7,7 +7,7 @@ enableRobotsTXT = true
 paginate = 10
 
 [params]
-  description = "Open Source Advocate, Musician, Audio Engineer, Woodsman, Trail Runner, Community Builder and Practitioner of Regenerative Ecology"
+  description = "Manipulator, Composer, Improviser, and Recorder of Sound and Visuals, Open Source Advocate, Community Builder and Practitioner of Regenerative Ecology"
   author = "Tate Eskew"
   bandcamp = "https://music.tateeskew.com"
   soundcloud = "https://soundcloud.com/tateeskew"

@@ -506,6 +506,7 @@ main {
   text-align: center;
   padding: var(--space-xl);
   max-width: 900px;
+  margin-top: -5vh;
 }
 
 /* Subtitle / slogan — sits above the name */

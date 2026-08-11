@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: "Tate Eskew — Open Source Advocate, Musician, Audio Engineer, Woodsman, Trail Runner, Community Builder and Practitioner of Regenerative Ecology."
+description: "Tate Eskew — Manipulator, Composer, Improviser, and Recorder of Sound and Visuals, Open Source Advocate, Community Builder and Practitioner of Regenerative Ecology."
 featured_image: "/images/tate_recording_redone.jpg"
 ---
 
