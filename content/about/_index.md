@@ -6,9 +6,7 @@ featured_image: "/images/tate_recording_redone.jpg"
 
 <div class="about-intro">
 
-I've been committing sounds to tape and disk since I got one of [these](/images/califone.jpg). My work spans recording, composing, improvising, and manipulating sound. I've worked on record albums, television shows, and films, including nearly a decade as a recordist for ***The Simpsons***, ***Futurama***, and ***King of the Hill***.
-
-I also practice photography.
+I'm an interdisciplinary artist working in sound recording, composition, improvisation, and photography. I've been committing sounds to tape and disk since I got one of [these](/images/califone.jpg). I've worked on record albums, television shows, and films, including nearly a decade as a recordist for ***The Simpsons***, ***Futurama***, and ***King of the Hill***.
 
 I'm available to record or take part in projects. [Contact me](/#contact).
 
