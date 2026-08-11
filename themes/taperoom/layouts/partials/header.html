@@ -4,7 +4,11 @@
 
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">menu</button>
 
-    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+    {{/* Desktop: nav renders inline via CSS. Mobile: nav is position:fixed and must
+         live outside the header so its z-index isn't trapped by the header's
+         stacking context (position:sticky + z-index:100). We render it here for
+         desktop and duplicate it below for mobile via the "site-nav-mobile" class. */}}
+    <nav class="site-nav site-nav-desktop" aria-label="Main navigation">
       {{ range .Site.Menus.main }}
         <a href="{{ .URL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a>
       {{ end }}
@@ -17,3 +21,10 @@
     </div>
   </div>
 </header>
+
+<!-- Mobile nav: lives outside header to avoid stacking-context issues -->
+<nav class="site-nav site-nav-mobile" id="site-nav" aria-label="Main navigation">
+  {{ range .Site.Menus.main }}
+    <a href="{{ .URL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a>
+  {{ end }}
+</nav>

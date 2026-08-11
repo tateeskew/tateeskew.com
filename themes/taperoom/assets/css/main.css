@@ -323,6 +323,11 @@ main {
   gap: var(--space-lg);
 }
 
+/* Mobile nav is hidden on desktop */
+.site-nav-mobile {
+  display: none;
+}
+
 .site-nav a {
   font-family: var(--font-mono);
   font-size: 0.75rem;
@@ -385,7 +390,14 @@ main {
     display: block;
   }
 
-  .site-nav {
+  /* Hide the inline desktop nav on mobile */
+  .site-nav-desktop {
+    display: none;
+  }
+
+  /* Show and style the mobile nav (lives outside header, no stacking-context issue) */
+  .site-nav-mobile {
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -402,11 +414,11 @@ main {
     border-right: 1px solid var(--border);
   }
 
-  .site-nav.is-open {
+  .site-nav-mobile.is-open {
     transform: translateX(0);
   }
 
-  .site-nav a {
+  .site-nav-mobile a {
     font-size: 0.9rem;
   }
 
