@@ -881,6 +881,127 @@ main {
 .project-list li:last-child {
   border-bottom: none;
 }
+
+/* --- About Intro Statement --- */
+.about-intro {
+  font-size: 1.1rem;
+  line-height: 1.85;
+  color: var(--text-primary);
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-intro a {
+  color: var(--accent);
+}
+
+/* --- Project Cards --- */
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg);
+  margin: var(--space-lg) 0;
+}
+
+.project-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: var(--space-lg);
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project-card:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.project-card-logo {
+  margin-bottom: var(--space-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card-logo img {
+  max-height: 120px;
+  width: auto;
+  border: none !important;
+  margin: 0 !important;
+}
+
+.project-card-name {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.project-card-desc {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  flex: 1;
+}
+
+.project-card-desc a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--transition-fast);
+}
+
+.project-card-desc a:hover {
+  border-bottom-color: var(--accent);
+}
+
+.project-card-link {
+  display: inline-block;
+  margin-top: var(--space-md);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-faint);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: none;
+  transition: color var(--transition-fast);
+}
+
+.project-card-link:hover {
+  color: var(--accent);
+}
+
+/* --- About Section Dividers --- */
+.about-section {
+  margin-top: var(--space-2xl);
+}
+
+.about-section-brief {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.about-section-brief a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--transition-fast);
+}
+
+.about-section-brief a:hover {
+  border-bottom-color: var(--accent);
+}
+
+
 /* --- Blog Card List (Weblog) --- */
 .blog-list {
   display: flex;

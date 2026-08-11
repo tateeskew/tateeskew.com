@@ -1,36 +1,83 @@
 ---
 title: "About"
-description: "Tate Eskew — Manipulator, Composer, Improviser, and Recorder of Sound and Visuals, Open Source Advocate, Community Builder and Practitioner of Regenerative Ecology."
+description: "Tate Eskew. Manipulator, Composer, Improviser, and Recorder of Sound and Visuals, Open Source Advocate, Community Builder and Practitioner of Regenerative Ecology."
 featured_image: "/images/tate_recording_redone.jpg"
 ---
 
-![Tate Eskew Recording](/images/tate_recording_redone.jpg)
+<div class="about-intro">
 
-## Tate's Recording Engineering History
+I've been committing sounds to tape and disk since I got one of [these](/images/califone.jpg). My work spans recording, composing, improvising, and manipulating sound. I've worked on record albums, television shows, and films, including nearly a decade as a recordist for ***The Simpsons***, ***Futurama***, and ***King of the Hill***.
 
-- Recording in some shape or form since I got one of [these](/images/califone.jpg). Professionally doing it for the last 30+ years.
-- I've worked on lots of record albums, television shows and films. While working on these albums, television shows and films I've worked with great musicians, horrible musicians, well-known musicians/actors, non-well-known musicians/actors, amazingly wonderful people and amazingly terrible people.
-- I worked nearly a decade as a recordist for ***The Simpsons***, ***Futurama***, and ***King of the Hill***.
-- I've committed a lot of things to tape and disk. If you are interested in hearing any of the work I've done, just [email me](/#contact). I'm available to record your album if you see me as the person to do it.
+I also practice photography.
+
+I'm available to record or take part in projects. [Contact me](/#contact).
+
+</div>
 
 ---
 
-## Other Projects
+## Projects & Collectives
 
-- I created **Zero Art Radio** in 1997. With the help of friends and our community we managed to keep it alive for nearly 14 years. It was a large part of the independent music community in the early days of online communities and helped shape online self-distribution during the time the project was alive. We've since moved on to building other communities.
+<div class="project-cards">
 
-- My wife and I are building community through regenerative ecological design on our **Tsula Adohi Farm & Nature School**. We are in the developing stages of creating a nature immersion and ancestral knowledge school here in Tennessee. You can read more at [Tsula Adohi Farm and Nature School](http://tsulaadohi.com).
+<div class="project-card">
+  <div class="project-card-logo">
+    <img src="/images/fmrlarts_big_logo.png" alt="FMRL">
+  </div>
+  <div class="project-card-name">FMRL</div>
+  <div class="project-card-desc">
+    An arts collective I co-founded with Chris Davis to foster experimental arts through organizing events in Middle Tennessee. Named <a href="https://web.archive.org/web/20160506053923/http://www.nashvillescene.com/nashville/best-experimental-music-programming/BestOf?oid=4722064">Best Experimental Music Programming</a> by the Nashville Scene in 2014.
+  </div>
+  <a href="http://fmrlarts.org" class="project-card-link" target="_blank" rel="noopener">fmrlarts.org →</a>
+</div>
 
-- Along with Chris Davis, I started [FMRL](http://fmrlarts.org). **FMRL** is an arts collective created to help foster the arts through organizing events in the Middle Tennessee area. [Nashville Scene – Best of Nashville 2014](https://web.archive.org/web/20160506053923/http://www.nashvillescene.com/nashville/best-experimental-music-programming/BestOf?oid=4722064)
+<div class="project-card">
+  <div class="project-card-logo">
+    <img src="/images/fer_logo_header.png" alt="Functional Equivalent Recordings">
+  </div>
+  <div class="project-card-name">Functional Equivalent Recordings</div>
+  <div class="project-card-desc">
+    Part of the collective putting records out into the world. Visit the site for more information and to purchase releases.
+  </div>
+  <a href="http://www.functionalequivalentrecordings.com" class="project-card-link" target="_blank" rel="noopener">functionalequivalentrecordings.com →</a>
+</div>
 
-- Part of the collective that has put [Functional Equivalent Recordings](http://www.functionalequivalentrecordings.com) out into the world. Visit the site for more information and to purchase records.
+<div class="project-card">
+  <div class="project-card-logo">
+    <img src="/images/zero_art_radio_logo.png" alt="Zero Art Radio">
+  </div>
+  <div class="project-card-name">Zero Art Radio</div>
+  <div class="project-card-desc">
+    Founded in 1997. For nearly 14 years a cornerstone of the independent music community online. With the help of friends and community, it helped shape artist self-distribution during the early days of the internet. We've since moved on to building other communities.
+  </div>
+</div>
 
-- Contributor (both testing and monetarily) to [Ardour](https://ardour.org/). Ardour is a free (as in beer and speech) open source digital audio workstation (DAW) software application. Visit the site for more information and to contribute.
+</div>
 
-- Contributor to [Arch Linux](https://www.archlinux.org) and various other open source projects. [Tate's GitHub](https://github.com/tateeskew)
+---
 
-<div style="text-align: center; margin: var(--space-xl) 0;">
-<a href="http://www.functionalequivalentrecordings.com"><img src="/images/fer_logo_header.png" alt="Functional Equivalent Recordings" style="max-width: 300px;"></a>
+<div class="about-section">
+
+## Land & Community
+
+<div class="about-section-brief">
+
+My wife and I steward **Tsula Adohi Farm & Nature School** in Tennessee, building community through regenerative ecological design and developing a nature immersion and ancestral knowledge school. → [tsulaadohi.com](http://tsulaadohi.com)
+
+</div>
+</div>
+
+---
+
+<div class="about-section">
+
+## Open Source
+
+<div class="about-section-brief">
+
+I'm a contributor to [Ardour](https://ardour.org/) (open source DAW) and [Arch Linux](https://www.archlinux.org), among other projects. → [GitHub](https://github.com/tateeskew)
+
+</div>
 </div>
 
 ---

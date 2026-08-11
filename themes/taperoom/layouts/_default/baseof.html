@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}" data-theme="dark">
+<html lang="{{ .Site.LanguageCode }}" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,16 +34,7 @@
   <!-- Pagefind Search -->
   <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
 
-  <!-- Theme toggle (inline to prevent flash) -->
-  <script>
-    (function() {
-      var t = localStorage.getItem('theme');
-      if (t) document.documentElement.setAttribute('data-theme', t);
-      else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-        document.documentElement.setAttribute('data-theme', 'light');
-      }
-    })();
-  </script>
+
 </head>
 <body>
   {{ partial "header.html" . }}
@@ -72,24 +63,8 @@
   <!-- GLightbox JS -->
   <script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/js/glightbox.min.js"></script>
 
-  <!-- Theme toggle script -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // Theme toggle
-      var toggle = document.getElementById('theme-toggle');
-      if (toggle) {
-        toggle.addEventListener('click', function() {
-          var html = document.documentElement;
-          var current = html.getAttribute('data-theme');
-          var next = current === 'dark' ? 'light' : 'dark';
-          html.setAttribute('data-theme', next);
-          localStorage.setItem('theme', next);
-          toggle.textContent = next === 'dark' ? 'Light' : 'Dark';
-        });
-        // Set initial text
-        var current = document.documentElement.getAttribute('data-theme');
-        toggle.textContent = current === 'dark' ? 'Light' : 'Dark';
-      }
 
       // Mobile nav
       var navToggle = document.getElementById('nav-toggle');

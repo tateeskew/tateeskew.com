@@ -18,16 +18,16 @@ paginate = 10
 
 [menus]
   [[menus.main]]
-    name = "Writing"
-    pageRef = "/weblog"
-    weight = 10
-  [[menus.main]]
     name = "Audio"
     pageRef = "/audio"
-    weight = 20
+    weight = 10
   [[menus.main]]
     name = "Studio"
     pageRef = "/studio"
+    weight = 20
+  [[menus.main]]
+    name = "Writing"
+    pageRef = "/weblog"
     weight = 30
   [[menus.main]]
     name = "Events"
