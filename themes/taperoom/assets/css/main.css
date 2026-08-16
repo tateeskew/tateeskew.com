@@ -1317,6 +1317,61 @@ main {
   border-color: var(--accent);
 }
 
+/* --- About Teaser (Homepage) --- */
+.about-teaser {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: var(--space-xl);
+  margin: var(--space-xl) 0;
+  text-align: center;
+}
+
+.about-teaser h3 {
+  font-family: var(--font-display);
+  margin-bottom: var(--space-md);
+  letter-spacing: 0.04em;
+}
+
+.about-teaser p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  max-width: 640px;
+  margin: 0 auto var(--space-md);
+}
+
+.about-teaser-sub {
+  font-size: 0.85rem !important;
+  color: var(--text-faint) !important;
+  letter-spacing: 0.02em;
+}
+
+.about-teaser-sub strong {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.about-teaser-link {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: all var(--transition-fast);
+  margin-top: var(--space-sm);
+}
+
+.about-teaser-link:hover {
+  background: var(--accent);
+  color: var(--bg-deep);
+  border-bottom-color: var(--accent);
+}
+
 /* --- Contact --- */
 .contact-section {
   background: var(--bg-surface);
