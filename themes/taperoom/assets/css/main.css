@@ -1262,6 +1262,71 @@ main {
   margin-bottom: var(--space-md);
 }
 
+/* --- Audio Page: Featured & Grid --- */
+.featured-audio {
+  border-left: 3px solid var(--accent);
+  background: var(--accent-soft);
+  padding: var(--space-lg) var(--space-xl);
+  border-radius: 0 6px 6px 0;
+  margin-bottom: var(--space-xl);
+}
+
+.featured-audio h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.featured-audio .embed-container {
+  margin: var(--space-md) 0 0;
+}
+
+.audio-section-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+.audio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.bandcamp-minimal {
+  display: block;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.bandcamp-minimal iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .audio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-audio {
+    padding: var(--space-md) var(--space-lg);
+  }
+}
+
 /* --- Gallery --- */
 .gallery {
   display: grid;
